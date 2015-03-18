@@ -3,6 +3,8 @@ Force.com Migration Tool Scaffold
 
 Force.com Migration Tool (Force.com 移行ツール) を使用するための初期ファイル群です。
 
+http://dackdive.hateblo.jp/entry/2015/03/01/133827
+
 ### 使い方
 
 - 事前に Force.com Migration Tool をインストール
