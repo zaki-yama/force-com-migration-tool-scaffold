@@ -25,10 +25,11 @@ http://dackdive.hateblo.jp/entry/2015/03/01/133827
 ```zsh
 $ ./deploy.sh -p [プロパティファイル名] -t [デプロイ対象のディレクトリ]
 ```
+(`retrieve.sh` も同様)
 
 - デプロイ対象のディレクトリとその中の `package.xml` は事前に作成済みとします。
 - 各オプションは省略が可能です。その場合は `build.xml` の冒頭に記載した  
-デフォルトのプロパティファイル (`build.properties`)とディレクトリ (`codepkg/retrievecodepkg`)を使用します。
+デフォルトのプロパティファイル (`build.properties`) とディレクトリ (`codepkg` または `retrievecodepkg`) を使用します。
 
 ### 代表的なメタデータ
 
