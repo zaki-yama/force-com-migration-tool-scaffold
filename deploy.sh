@@ -2,20 +2,20 @@
 
 while getopts p:t: OPT
 do
-	case $OPT in
-		p)	PROPERTY=$OPTARG
-			;;
-		t)	TARGET=$OPTARG
-			;;
-	esac
+  case $OPT in
+    p)  PROPERTY=$OPTARG
+      ;;
+    t)  TARGET=$OPTARG
+      ;;
+  esac
 done
 
 if [ -n "$PROPERTY" ]; then
-	OPT_PROPERTY="-Dproperty=$PROPERTY"
+  OPT_PROPERTY="-Dproperty=$PROPERTY"
 fi
 
 if [ -n "$TARGET" ]; then
-	OPT_TARGET="-DdeployTarget=$TARGET"
+  OPT_TARGET="-DdeployTarget=$TARGET"
 fi
 
 ant deployCode $OPT_PROPERTY $OPT_TARGET
