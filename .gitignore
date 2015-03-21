@@ -1,4 +1,4 @@
 .DS_Store
-build.properties
+*.properties
 retrievecodepkg/*
 !retrievecodepkg/package.xml
