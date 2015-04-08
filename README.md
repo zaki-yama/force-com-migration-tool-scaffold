@@ -44,3 +44,13 @@ $ ./deploy.sh -p [プロパティファイル名] -t [デプロイ対象のデ�
 |カスタム表示ラベル|labels|.labels|CustomLabels|
 |カスタムタブ|tabs|.tab|CustomTab|
 |翻訳ファイル|translations|.translation|Translations|
+
+
+
+### Licence
+
+[MIT](https://github.com/zaki-yama/force-com-migration-tool-scaffold/blob/master/LICENSE)
+
+### Author
+
+[zaki-yama](https://github.com/zaki-yama) ( [blog(Japanese)](http://dackdive.hateblo.jp/) )
