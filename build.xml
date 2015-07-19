@@ -8,13 +8,15 @@
     <property name="deployTarget" value="codepkg"/>
     <property name="retrieveTarget" value="retrievecodepkg"/>
 
-	<available file="${property}" property="property.exists" />
-	<fail unless="${property.exists}" message="Property file does not exist: ${property}" />
-
-	<echo message="Property: ${property}, deployTarget: ${deployTarget}, retrieveTarget: ${retrieveTarget}" />
+    <available file="${property}" property="property.exists" />
+    <fail unless="${property.exists}" message="Property file does not exist: ${property}" />
 
     <property file="${property}"/>
     <property environment="env"/>
+
+    <echo message="Username: ${sf.username}" />
+    <echo message="deployTarget: ${deployTarget}" />
+    <echo message="retrieveTarget: ${retrieveTarget}" />
 
     <!-- コードを組織から取得 -->
     <target name="retrieveCode">
