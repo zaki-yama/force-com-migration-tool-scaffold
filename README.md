@@ -1,7 +1,7 @@
-Force.com Migration Tool Scaffold
+Force.com Migration Tool Template
 =================================
 
-Force.com Migration Tool (Force.com 移行ツール) を使用するための初期ファイル群です。
+Force.com Migration Tool (Force.com 移行ツール) を使用するためのテンプレートです。
 
 http://dackdive.hateblo.jp/entry/2015/03/01/133827
 
