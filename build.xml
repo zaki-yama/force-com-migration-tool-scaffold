@@ -5,8 +5,8 @@
         - deploy 対象ディレクトリ
         - retrieve 先ディレクトリ -->
     <property name="property" value="build.properties"/>
-    <property name="deployTarget" value="codepkg"/>
-    <property name="retrieveTarget" value="retrievecodepkg"/>
+    <property name="deployTarget" value="src"/>
+    <property name="retrieveTarget" value="src"/>
 
     <available file="${property}" property="property.exists" />
     <fail unless="${property.exists}" message="Property file does not exist: ${property}" />
@@ -59,7 +59,7 @@
             password="${sf.password}"
             serverurl="${sf.serverurl}"
             maxPoll="${sf.maxPoll}"
-            deployRoot="codepkg"
+            deployRoot="${deployTarget}"
             runAllTests="true"
             logType="Debugonly"/>
     </target>
@@ -71,7 +71,7 @@
             password="${sf.password}"
             serverurl="${sf.serverurl}"
             maxPoll="${sf.maxPoll}"
-            deployRoot="codepkg"
+            deployRoot="${deployTarget}"
             checkOnly="true"/>
     </target>
 
